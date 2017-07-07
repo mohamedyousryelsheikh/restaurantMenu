@@ -1,0 +1,3 @@
+*run as local server using web server chrome extension
+*changed the naming of the json file
+*there is an error at the json file format.. json file isn't valid

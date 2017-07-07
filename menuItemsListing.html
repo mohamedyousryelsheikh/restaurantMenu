@@ -1,0 +1,16 @@
+ 
+<ul class="category-listing">
+  <li ng-repeat="category in myData" ng-click="hideShow($index)">
+    <div class="category-title">
+        <span class="glyphicon glyphicon-chevron-right"></span>{{ category.name }}</div>
+    <table ng-hide="true" id="items_list_{{$index}}" class="collapse-item table table-striped" >
+        <tr ng-repeat="itemDetails in category.items">
+        <td >
+            <div>Plate : {{itemDetails.name}}</div>
+            <div>Description : {{itemDetails.description}}</div>
+            <div>Price : {{itemDetails.price}}</div>
+        </td>
+        </tr>
+    </table>
+  </li>
+</ul>
